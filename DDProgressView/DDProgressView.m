@@ -124,6 +124,10 @@
 	if (rect.size.width < 2 * radius)
 		rect.size.width = 2 * radius ;
 	
+	if(!rect.size.width || isnan(rect.size.width)){
+		rect.size.width = 2 * radius ;
+	}
+	q
 	[innerColor setFill] ;
 	
 	CGContextBeginPath(context) ;
